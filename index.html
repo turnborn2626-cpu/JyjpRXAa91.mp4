@@ -2,13 +2,52 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Nice</title>
     <style>
-        body {
-    background-color: #fff !important;
-    color: #fff;
-  }
+  .video-actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        display: none;
+      }
+
+      .video-actions-inner {
+        width: 100%;
+        max-width: 720px;
+        display: flex;
+        gap: 8px;
+        padding: 12px 12px 6px 12px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        white-space: nowrap;
+      }
+      
+      .video-actions-inner::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .action-btn {
+        background: #f2f2f2;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 16px;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        flex-shrink: 0;
+      }
+
+      .action-btn, .action-btn a {
+        color: #000;
+      }
+      
+      .action-btn:hover {
+        background: #e5e5e5;
+      }
     </style>
 </head>
 <body>
